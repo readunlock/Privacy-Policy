@@ -170,7 +170,7 @@
     </div>
 
     <div style="text-align:center;">
-      <span class="badge">Last updated: June 2026</span>
+      <span class="badge">Last updated: July 2026</span>
     </div>
 
     <!-- What We Collect -->
@@ -181,15 +181,16 @@
         </span>
         What We Collect
       </h2>
-      <p>ReadUnlock stores all data locally on your device. We do not collect, transmit, or store any personal information on external servers.</p>
+      <p>ReadUnlock stores its data locally on your device. We do not operate user accounts or our own servers, and we never sell your data or use third-party analytics or advertising.</p>
       <p>Data stored on-device includes:</p>
       <ul>
         <li>Reading progress, streaks, and time spent reading</li>
         <li>Comprehension quiz scores</li>
-        <li>The parent PIN (stored securely in the device Keychain)</li>
+        <li>The parent PIN (stored in the device Keychain as a salted hash — never in plain text)</li>
         <li>App settings such as reading level and daily goal</li>
         <li>The parent email address you optionally provide for notifications</li>
       </ul>
+      <p>The only time information leaves your device is when you, the parent, choose to enable email notifications — see "Email Notifications" below.</p>
     </div>
 
     <!-- Screen Time -->
@@ -213,7 +214,7 @@
         Subscriptions and Payments
       </h2>
       <p>Purchases are handled entirely by Apple's App Store and StoreKit. We never see or store your payment information.</p>
-      <p>Subscription management (cancellation, renewal) is done through your Apple ID settings. After a 3-day free trial, the subscription auto-renews at $4.99/month unless cancelled at least 24 hours before the renewal date.</p>
+      <p>Subscription management (cancellation, renewal) is done through your Apple ID settings. After any free trial, the subscription auto-renews monthly or annually — at the price shown in the app when you subscribe — unless cancelled at least 24 hours before the renewal date.</p>
     </div>
 
     <!-- Children's Privacy -->
@@ -224,8 +225,8 @@
         </span>
         Children's Privacy
       </h2>
-      <p>ReadUnlock is designed for use by children under parental supervision. We do not knowingly collect personal information from children.</p>
-      <p>No account creation is required, and no data from a child's use of the app leaves the device.</p>
+      <p>ReadUnlock is intended for children to use under the supervision of a parent or guardian, and is designed to comply with the Children's Online Privacy Protection Act (COPPA). No account creation is required, and we do not knowingly collect personal information directly from children.</p>
+      <p>A child's reading progress and quiz data stay on the device. If a parent enables the optional Weekly Report, a summary of that activity (reading level, time read, streaks, and quiz scores) is sent to the parent's own email address via EmailJS. Parents can turn these notifications off at any time in Parent Settings.</p>
     </div>
 
     <!-- Email Notifications -->
@@ -237,7 +238,7 @@
         Email Notifications
       </h2>
       <p>If you optionally provide a parent email address, it is stored locally on your device. When you enable email notifications, ReadUnlock uses <a href="https://www.emailjs.com" target="_blank" rel="noopener">EmailJS</a> (emailjs.com) to deliver those emails.</p>
-      <p>Your email address and the notification content are transmitted to EmailJS's servers solely for the purpose of sending the email. EmailJS does not store your email address beyond what is necessary to deliver the message.</p>
+      <p>Your email address and the notification content are transmitted to EmailJS's servers solely for the purpose of sending the email, and are handled in accordance with the <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank" rel="noopener">EmailJS privacy policy</a>.</p>
       <p>You can disable notifications at any time in Parent Settings.</p>
     </div>
 
@@ -264,7 +265,8 @@
         </span>
         Data Security
       </h2>
-      <p>The parent PIN is stored in the iOS Keychain, which is encrypted and sandboxed to this app. All other data is stored in the app's private local storage and is not accessible to other apps.</p>
+      <p>The parent PIN is stored in the iOS Keychain — encrypted, sandboxed to this app, and saved only as a salted hash, never in plain text. All other data is stored in the app's private local storage and is not accessible to other apps.</p>
+      <p>Parents can permanently erase all stored data at any time using "Erase All Data &amp; Start Over" in Parent Settings.</p>
     </div>
 
     <!-- Contact -->
